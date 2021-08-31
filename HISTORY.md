@@ -3,6 +3,29 @@
 https://github.com/josdejong/jsoneditor
 
 
+## 2021-08-25, version 9.5.4
+
+- Use `noreferrer` for window.open, see #1365. Thanks @rajitbanerjee.
+- Fix #1363: parsing error contains html characters.
+- Fix opening the Transform or Sort modal in code mode with invalid JSON 
+  contents not triggering the `onError` callback (see #1364).
+- Change the default behavior of error handling to open a basic alert instead
+  of logging the error in the console (see #1364).
+
+
+## 2021-07-28, version 9.5.3
+
+- Fix #1356: background of tree mode is transparent instead of white.
+- Fix #473: enum dropdown not working on referenced schemas and templates,
+  see #1355. Thanks @mpccolorado.
+
+
+## 2021-07-22, version 9.5.2
+
+- Fix #675: Relative image urls in CSS replaced with absolute urls by build 
+  script, see #1354. Thanks @esulu.
+
+
 ## 2021-06-30, version 9.5.1
 
 - Upgrade to `jsonrepair@2.2.1`.
